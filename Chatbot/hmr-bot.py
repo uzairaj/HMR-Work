@@ -10,7 +10,7 @@ from openai import OpenAI
 import docx
 
 from PIL import Image
-import pytesseract
+#import pytesseract
 import re
 # Load environment variables from the .env file
 load_dotenv()
@@ -38,17 +38,6 @@ def parse_filename(filename):
     if match:
         tower_name = f"H{match.group(1)}"
         room_code = match.group(2)
-        # print('Test:   ', tower_name, room_code)
-        # if room_code.startswith('PH'):
-        #     num_rooms = 'Penthouse'
-        #     room_type = room_code
-        # elif room_code.startswith('TH'):
-        #     num_rooms = 'Townhouse'
-        #     room_type = room_code
-        # else:
-        #     num_rooms = re.match(r'(\d+)', room_code).group(1)
-        #     room_type = room_code[len(num_rooms):]
-
         return tower_name, room_code
     
     return None, None, None
@@ -246,9 +235,6 @@ def get_img_as_base64(file):
     with open(file, "rb") as f:
         data = f.read()
     return base64.b64encode(data).decode()
-
-
-
 
 
 img = get_img_as_base64("hmr-img.jpg")
