@@ -1,0 +1,16 @@
+faster-whisper
+pyaudio
+scipy
+numpy
+gradio
+gTTS
+pygame
+openai
+sentence-transformers
+faiss-cpu
+python-docx
+Pillow
+streamlit
+wave
+python-dotenv
+
