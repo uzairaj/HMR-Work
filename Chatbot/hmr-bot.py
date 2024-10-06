@@ -10,7 +10,7 @@ from openai import OpenAI
 import docx
 
 from PIL import Image
-#import pytesseract
+import pytesseract
 import re
 # Load environment variables from the .env file
 load_dotenv()
