@@ -1,7 +1,4 @@
 faster-whisper
-pyaudio
-scipy
-numpy
 gradio
 gTTS
 pygame
@@ -11,6 +8,4 @@ faiss-cpu
 python-docx
 Pillow
 streamlit
-wave
 python-dotenv
-
